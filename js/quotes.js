@@ -62,5 +62,7 @@ const author = document.querySelector('#quote span:last-child');
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 // 가져온 값을 넣어 줌
 quote.innerText = todaysQuote.quote;
-meaning.innerText = todaysQuote.meaning;
-author.innerText = todaysQuote.author;
+meaning.innerText = `( ${todaysQuote.meaning} )`;
+author.innerText = `- ${todaysQuote.author}`;
+
+console.log(todaysQuote);

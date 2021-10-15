@@ -1,3 +1,105 @@
+html {
+  font-size: 16px;
+}
+
 .hidden {
   display: none;
+}
+
+#backgroundImage {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#weather {
+  color: beige;
+  position: absolute;
+  margin-top: 1rem;
+  right: 2rem;
+  top: 0;
+  text-shadow: 5px 5px 15px rgb(238, 70, 4);
+  background-color: rgba(2, 2, 2, 0.26);
+  padding: 0.5rem;
+}
+
+#weather span:first-child {
+  font-size: 1rem;
+}
+
+#weather span:last-child {
+  display: block;
+  font-size: 1.5rem;
+}
+
+#clock {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: beige;
+  text-shadow: 0 0 1rem #000;
+}
+
+#quote {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#quote span:first-child {
+  font-size: 1.5rem;
+  color: rgb(224, 253, 228);
+  text-shadow: 0 0 15px rgb(240, 234, 234);
+}
+
+#quote span:nth-child(2) {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: rgb(224, 253, 228);
+  text-shadow: 0 0 15px rgb(240, 234, 234);
+}
+
+#quote span:last-child {
+  display: block;
+  text-align: right;
+  font-size: 1rem;
+  color: rgb(180, 252, 189);
+  text-shadow: 0 0 15px rgb(240, 234, 234);
+}
+
+#todo-form [type='text'] {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 15rem;
+}
+#todo-list {
+  list-style: decimal;
+  background-color: rgba(2, 2, 2, 0.26);
+  max-width: 25rem;
+  height: 15rem;
+  max-height: 15rem;
+  color: white;
+  overflow-y: auto;
+}
+#todo-list span {
+  margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  #clock {
+    font-size: 7rem;
+  }
 }

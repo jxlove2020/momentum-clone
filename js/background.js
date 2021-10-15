@@ -15,6 +15,7 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 // 스크립트로 이미지 엘리먼트 생성
 const bgImage = document.createElement('img');
+bgImage.id = 'backgroundImage';
 bgImage.src = `img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
